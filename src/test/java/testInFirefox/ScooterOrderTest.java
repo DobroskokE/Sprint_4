@@ -1,6 +1,5 @@
 package testInFirefox;// импорт класса Parameterized и аннотации RunWith
 
-import PageObject.MainPage;
 import PageObject.OrderPage;
 import org.junit.After;
 import org.junit.Test;
@@ -66,9 +65,6 @@ public class ScooterOrderTest {// создали тестовый класс
 
         // перешли на страницу тестового приложения
         driver.get("https://qa-scooter.praktikum-services.ru");
-
-        //создай объект класса главной страницы
-        MainPage objMainPage = new MainPage(driver);
 
         //создай объект параметризованного теста
         ScooterOrderTest scooterOrderTest = new ScooterOrderTest(orderButton, name, lastName, address, phoneNumber, comment);

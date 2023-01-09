@@ -31,8 +31,7 @@ public class OrderPage {
     //Поле Когда привезти самокат
     private By whenDeliveryScooterField = By.xpath(".//*[@placeholder='* Когда привезти самокат']");
     //выбрать дату доставки
-    private By whenDeliveryScooterDate = By.xpath(".//div[@class='react-datepicker__day react-datepicker__day--007 react-datepicker__day--keyboard-selected react-datepicker__day--today react-datepicker__day--weekend']");
-
+    private By whenDeliveryScooterDate = By.xpath(".//div[starts-with(@class,'react-datepicker__day react-datepicker__day--007')]");
     //поле Срок аренды
     private By rentalPeriodField = By.className("Dropdown-placeholder");
     //Выбор срока аренды из списка

@@ -1,13 +1,8 @@
 package PageObject;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class MainPage {
-
-    //Главная страница
-    private WebDriver driver;
-
     //локаторы для кнопкок выпадающего списка в разделе Вопросы о важном
     public static final By HOW_MATCH_BUTTON = By.xpath(".//div[text()='Сколько это стоит? И как оплатить?']");
     public static final By WANT_SEVERAL_SCOOTER_BUTTON = By.xpath(".//div[text()='Хочу сразу несколько самокатов! Так можно?']");
@@ -36,9 +31,4 @@ public class MainPage {
 
     //кнопка Заказать внизу страницы
     public static final By ORDER_BOTTOM_BUTTON = By.xpath(".//button[text()='Заказать']");
-
-    //Добавили конструктор класса page object
-    public MainPage(WebDriver driver){
-        this.driver = driver;
-    }
 }

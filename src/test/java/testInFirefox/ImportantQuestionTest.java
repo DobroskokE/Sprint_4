@@ -1,6 +1,5 @@
 package testInFirefox;
 
-import PageObject.MainPage;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
@@ -53,9 +52,6 @@ public class ImportantQuestionTest {// создали тестовый клас�
 
         // перешли на страницу тестового приложения
         driver.get("https://qa-scooter.praktikum-services.ru");
-
-        //создай объект класса главной страницы
-        MainPage objMainPage = new MainPage(driver);
 
         //Принять куки,т.к. мешают
         driver.findElement(COOKIE_BUTTON).click();
