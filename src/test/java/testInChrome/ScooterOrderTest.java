@@ -67,9 +67,6 @@ public class ScooterOrderTest {// создали тестовый класс
         // перешли на страницу тестового приложения
         driver.get("https://qa-scooter.praktikum-services.ru");
 
-        //создай объект параметризованного теста
-        ScooterOrderTest scooterOrderTest = new ScooterOrderTest(orderButton, name, lastName, address, phoneNumber, comment);
-
         //Принять куки,т.к. мешают
         driver.findElement(COOKIE_BUTTON).click();
 
